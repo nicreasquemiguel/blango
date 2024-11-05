@@ -83,6 +83,7 @@ class Dev(Configuration):
         'crispy_bootstrap5',
         'debug_toolbar',
         'blango_auth',
+        'django_registration',
     ]
 
     MIDDLEWARE = [
@@ -150,6 +151,10 @@ class Dev(Configuration):
         },
     ]
 
+
+    ACCOUNT_ACTIVATION_DAYS = 7
+
+    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
     # Internationalization
     # https://docs.djangoproject.com/en/3.2/topics/i18n/
