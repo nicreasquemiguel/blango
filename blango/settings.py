@@ -90,6 +90,7 @@ class Dev(Configuration):
       'allauth.socialaccount',
       'allauth.socialaccount.providers.google',
       'rest_framework',
+      'rest_framework.authtoken',
       'drf_yasg',
     ]
 
