@@ -1,10 +1,6 @@
 from rest_framework.throttling import AnonRateThrottle, UserRateThrottle
-import random
 
-class RandomRateThrottle(throttling.BaseThrottle):
-    def allow_request(self, request, view):
-        return random.randint(1, 10) != 1
-        
+
 class AnonSustainedThrottle(AnonRateThrottle):
     scope = "anon_sustained"
 
