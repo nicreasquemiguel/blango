@@ -1,5 +1,21 @@
 {% extends "base.html" %}
 {% load static %}
+{% block title %}Post Table{% endblock %}
 {% block content %}
-    <script src="{% static "blog/blog.js" %}"></script>
+
+  <div class="row">
+    <div class="col">
+      <div id="react_root"></div>
+    </div>
+  </div>
+
+    <!-- <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script> -->
+    <!-- <script src="https://unpkg.com/react-dom@17/umd/reactdom.development.js" crossorigin></script> -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script  type="text/babel"
+
+If  src="{% static "blog/blog.js" %}"></script>
 {% endblock %}
